@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.yun87457-web/website-contacts-pricing-intel-mcp",
+  "title": "Website Contacts, Socials, Pricing & LLM Brief MCP Server",
+  "description": "Extract emails, socials, SaaS /pricing tiers, DNS MX/SPF, and /llms.txt briefs from any domain.",
+  "repository": {
+    "url": "https://github.com/yun87457-web/adpulse-mcp-servers",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://spiky-closet--website-contacts-pricing-intel.apify.actor/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Apify Bearer token (format: Bearer <YOUR_APIFY_TOKEN>)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

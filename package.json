@@ -1,6 +1,6 @@
 {
   "name": "sitebrief-website-contacts-pricing-mcp",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Installable MCP server for B2B domain enrichment: verified emails, phones, 12+ social profiles, SaaS /pricing tiers & PLG flags, DNS MX/SPF, and /llms.txt Markdown briefs.",
   "type": "module",
   "license": "MIT",

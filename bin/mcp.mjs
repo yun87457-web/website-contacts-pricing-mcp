@@ -12,30 +12,129 @@
 import readline from "node:readline";
 
 const SERVER_NAME = "sitebrief-website-contacts-pricing-mcp";
-const SERVER_VERSION = "1.1.0";
-const APIFY_MCP_URL = "https://spiky-closet--website-contacts-pricing-intel.apify.actor/mcp";
+const SERVER_VERSION = "1.1.1";
+const APIFY_MCP_URL = process.env.MCP_ENDPOINT_OVERRIDE || "https://spiky-closet--website-contacts-pricing-intel.apify.actor/mcp";
 const APIFY_URL = "https://apify.com/spiky_closet/website-contacts-pricing-intel";
 const RAPIDAPI_URL = "https://rapidapi.com/HYunLe/api/website-contacts-socials-pricing-llm-brief-api";
 const RAPIDAPI_HOST = "website-contacts-socials-pricing-llm-brief-api.p.rapidapi.com";
+const REST_BASE_URL = process.env.REST_BASE_OVERRIDE || `https://${RAPIDAPI_HOST}`;
 const TOOLS = [
   {
-    "name": "enrich_company_website",
-    "description": "Extract verified emails, phones, social profiles, SaaS /pricing tiers, DNS MX/SPF, and /llms.txt or clean Markdown brief for a domain or work email.",
+    "description": "Enrich a single company domain, URL, or work email with verified contact emails, phone numbers, 12+ social links, SaaS /pricing tiers & PLG signals, DNS MX/SPF email provider metadata, and /llms.txt or clean Markdown company brief.",
     "inputSchema": {
-      "type": "object",
       "properties": {
         "domain": {
-          "type": "string",
-          "description": "Company domain, URL, or work email (e.g. linear.app)"
+          "description": "Company domain (e.g. 'stripe.com'), full URL, or work email (e.g. 'ops@linear.app').",
+          "type": "string"
+        },
+        "includeDns": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includeLlmsTxt": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includeMarkdown": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includePricing": {
+          "default": true,
+          "type": "boolean"
+        },
+        "maxPagesPerDomain": {
+          "default": 4,
+          "maximum": 8,
+          "minimum": 1,
+          "type": "integer"
         }
       },
       "required": [
         "domain"
-      ]
+      ],
+      "type": "object"
     },
+    "name": "enrich_company_website",
     "rapidapi": {
       "method": "GET",
       "path": "/enrich"
+    }
+  },
+  {
+    "description": "Concurrently enrich up to 50 company domains, URLs, or work emails in a single call.",
+    "inputSchema": {
+      "properties": {
+        "concurrency": {
+          "default": 8,
+          "maximum": 25,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "domains": {
+          "description": "List of company domains, URLs, or work emails (max 50 per call).",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
+        },
+        "includeDns": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includeLlmsTxt": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includeMarkdown": {
+          "default": true,
+          "type": "boolean"
+        },
+        "includePricing": {
+          "default": true,
+          "type": "boolean"
+        },
+        "maxPagesPerDomain": {
+          "default": 4,
+          "maximum": 8,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "maxResults": {
+          "default": 0,
+          "minimum": 0,
+          "type": "integer"
+        }
+      },
+      "required": [
+        "domains"
+      ],
+      "type": "object"
+    },
+    "name": "batch_enrich_domains",
+    "rapidapi": {
+      "method": "POST",
+      "path": "/enrich"
+    }
+  },
+  {
+    "description": "Fetch any public web page URL and return clean LLM-ready Markdown, page title, meta description, and word count.",
+    "inputSchema": {
+      "properties": {
+        "url": {
+          "description": "Public HTTP/HTTPS URL or domain to convert into clean Markdown.",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url"
+      ],
+      "type": "object"
+    },
+    "name": "extract_page_markdown",
+    "rapidapi": {
+      "method": "GET",
+      "path": "/markdown"
     }
   }
 ];
@@ -74,7 +173,7 @@ async function proxyApifyMcp(payload, token) {
 
 async function callRapidApi(tool, args, key) {
   const cfg = tool.rapidapi;
-  let url = `https://${RAPIDAPI_HOST}${cfg.path}`;
+  let url = `${REST_BASE_URL}${cfg.path}`;
   const headers = {
     "x-rapidapi-key": key,
     "x-rapidapi-host": RAPIDAPI_HOST

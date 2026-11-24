@@ -1,3 +1,5 @@
+![Cover](./cover.png)
+
 # Website Contacts, Socials, Pricing & LLM Brief — REST API & MCP Server
 
 [![Website Contacts, Pricing & LLM Brief MCP connector](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp)

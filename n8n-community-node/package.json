@@ -1,0 +1,19 @@
+{
+  "name": "n8n-nodes-sitebrief-enrichment",
+  "version": "1.0.0",
+  "description": "n8n community node & workflow bundle for SiteBrief \u2014 Website Contacts, Pricing & /llms.txt MCP Server",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "mcp",
+    "model-context-protocol",
+    "lead-enrichment",
+    "llms-txt"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yun87457-web/website-contacts-pricing-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yun87457-web/website-contacts-pricing-mcp.git"
+  }
+}

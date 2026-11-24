@@ -1,0 +1,16 @@
+{
+  "provider": "SiteBrief Website Contacts, Pricing & /llms.txt API",
+  "method": "GET",
+  "endpoint": "https://website-contacts-socials-pricing-llm-brief-api.p.rapidapi.com/enrich?domain={{Domain}}",
+  "headers": {
+    "x-rapidapi-key": "{{YOUR_RAPIDAPI_KEY}}",
+    "x-rapidapi-host": "website-contacts-socials-pricing-llm-brief-api.p.rapidapi.com"
+  },
+  "extract_fields": [
+    "primaryEmails",
+    "pricingSummary",
+    "briefSource",
+    "llmsTxtUrl",
+    "socialLinksSummary"
+  ]
+}

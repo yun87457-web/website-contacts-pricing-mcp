@@ -1,0 +1,101 @@
+domain,companyName,hasLlmsTxt,llmsTxtUrl,hasPricing,hasFreeTier,hasUsageBased,tierNames,pricingSummary,emailCount,emailProvider
+anthropic.com,Home \ Anthropic,False,,True,True,False,Free|Pro|Team|Enterprise,"Free, Pro, Team, Enterprise ($0, $17, $200, $20)",0,Google Workspace
+openai.com,OpenAI,False,,True,True,False,Free|Plus|Pro|Business|Enterprise,"Free, Plus, Pro, Business",0,Google Workspace
+stripe.com,Stripe,True,https://stripe.com/llms.txt,True,True,True,,"$5.00, $15.00, $29.00, $0.03",16,Google Workspace
+cloudflare.com,Cloudflare,True,https://cloudflare.com/llms.txt,True,True,True,Free|Pro|Business|Scale,"Free, Pro, Business, Scale ($0, $20, $25/mo, $200)",0,Custom
+vercel.com,Vercel,True,https://vercel.com/llms.txt,True,True,True,Hobby|Core|Pro|Scale,"Hobby, Core, Pro, Scale ($0/mo, $20/mo, $20, $0.50)",0,Google Workspace
+supabase.com,Supabase,True,https://supabase.com/llms.txt,True,True,True,Free|Pro|Team|Scale|Enterprise,"Free, Pro, Team, Scale ($0, $25, $10/mo, $0.00325)",0,Google Workspace
+neon.tech,Neon,True,https://neon.tech/llms.txt,True,True,True,Free|Scale,"Free, Scale ($0, $15/mo, $0.106, $0.35)",0,Google Workspace
+resend.com,Resend,True,https://resend.com/llms.txt,True,True,False,,"$20, $30, $150, $1",84,Google Workspace
+mintlify.com,Mintlify,True,https://mintlify.com/llms.txt,True,True,True,Free|Starter|Pro|Enterprise,"Free, Starter, Pro, Enterprise ($0/mo, $150/mo, $180/mo, $450/mo)",0,Google Workspace
+linear.app,linear.app,False,,False,False,False,,—,0,Google Workspace
+posthog.com,PostHog,True,https://posthog.com/llms.txt,True,True,False,Free,"Free ($5, $25, $20, $2)",17,Google Workspace
+sentry.io,Sentry,True,https://sentry.io/llms.txt,True,True,False,Free|Team|Business|Enterprise,"Free, Team, Business, Enterprise ($0, $26/mo, $80/mo, $0.50)",0,Google Workspace
+cursor.com,Cursor,True,https://cursor.com/llms.txt,True,True,False,Free|Plus|Teams,"Free, Plus, Teams ($0/mo, $8/mo, $30/mo, $100/mo)",13,Google Workspace
+perplexity.ai,perplexity.ai,False,,False,False,False,,—,0,Google Workspace
+elevenlabs.io,ElevenLabs,True,https://elevenlabs.io/llms.txt,True,True,False,Free|Starter|Pro|Business|Scale|Enterprise,"Free, Starter, Pro, Business ($1, $0/mo, $60, $6)",0,Google Workspace
+firecrawl.dev,Firecrawl,True,https://firecrawl.dev/llms.txt,True,True,True,Free|Hobby|Growth|Team|Scale|Enterprise,"Free, Hobby, Growth, Team ($75, $83/mo, $0, $16)",18,Google Workspace
+exa.ai,Exa,True,https://exa.ai/llms.txt,True,True,True,Free|Starter|Growth|Enterprise,"Free, Starter, Growth, Enterprise ($15,000, $120, $10, $4)",59,Google Workspace
+browserbase.com,Browserbase,True,https://browserbase.com/llms.txt,True,True,True,Free|Scale,"Free, Scale ($0/mo, $5, $20/mo, $0.12)",23,Google Workspace
+e2b.dev,E2B,True,https://e2b.dev/llms.txt,True,True,False,Free|Hobby|Pro|Enterprise,"Free, Hobby, Pro, Enterprise ($100, $150, $500, $1,000/mo)",33,Google Workspace
+modal.com,Modal,True,https://modal.com/llms.txt,True,False,True,Starter|Pro|Team|Enterprise,"Starter, Pro, Team, Enterprise ($0.001972, $0.001736, $0.001261, $0.001097)",0,Google Workspace
+replicate.com,Replicate,True,https://replicate.com/llms.txt,True,False,False,Pro|Enterprise,"Pro, Enterprise ($0.04, $0.025, $3.00, $0.01)",0,Google Workspace
+together.ai,Together AI,True,https://together.ai/llms.txt,True,True,True,Free,"Free ($1.40, $0.26, $4.40, $0.30)",0,Google Workspace
+groq.com,Groq,False,,False,False,False,,—,0,Google Workspace
+fireworks.ai,Fireworks,True,https://fireworks.ai/llms.txt,True,False,True,Pro|Team|Enterprise,"Pro, Team, Enterprise ($0.05, $3.00, $0.30, $15.00)",0,Google Workspace
+pinecone.io,Pinecone,True,https://pinecone.io/llms.txt,True,True,True,Starter|Enterprise,"Starter, Enterprise ($20/mo, $50/mo, $300, $500/mo)",0,Google Workspace
+weaviate.io,Weaviate,True,https://weaviate.io/llms.txt,True,True,True,Free,"Free ($0/mo, $45/mo, $0.025, $0.040)",38,Google Workspace
+qdrant.tech,Qdrant,True,https://qdrant.tech/llms.txt,True,True,True,Free,Free,15,Google Workspace
+langchain.com,Langchain,False,,True,True,True,Plus|Enterprise,"Plus, Enterprise ($0, $39, $10,000, $1.00)",0,Google Workspace
+llamaindex.ai,LlamaIndex,True,https://llamaindex.ai/llms.txt,True,True,False,Pro|Enterprise,"Pro, Enterprise ($0/mo, $1.50, $500/mo, $1,000)",0,Google Workspace
+cohere.com,Cohere,True,https://cohere.com/llms.txt,True,False,False,Team,"Team ($3.00, $1.00, $3.25, $2.25)",18,Google Workspace
+mistral.ai,Mistral,True,https://mistral.ai/llms.txt,True,True,True,Team|Enterprise,"Team, Enterprise ($14.99, $24.99, $50, $0.5)",16,Google Workspace
+huggingface.co,Hugging Face,False,,True,False,False,Pro|Team|Enterprise,"Pro, Team, Enterprise ($9/mo, $2, $20/mo, $500/mo)",20,Google Workspace
+wandb.ai,Forge,False,,True,True,True,Free|Pro|Enterprise,"Free, Pro, Enterprise ($0/mo, $60/mo, $0.03, $0.10)",0,Google Workspace
+baseten.co,Baseten,True,https://baseten.co/llms.txt,True,False,True,,"$0.10, $0.035, $0.01, $0.40",0,Google Workspace
+fal.ai,fal,True,https://fal.ai/llms.txt,True,False,False,,"$2.49, $12.99, $5.99, $9.99",14,Google Workspace
+deepgram.com,Deepgram,True,https://deepgram.com/llms.txt,True,True,True,Free|Growth|Enterprise,"Free, Growth, Enterprise ($200, $4,000, $0.0065, $0.0077)",96,Google Workspace
+assemblyai.com,Assemblyai,True,https://assemblyai.com/llms.txt,True,True,True,Free|Enterprise,"Free, Enterprise ($0.62, $0.45, $0.30, $0.21)",0,Google Workspace
+cartesia.ai,Cartesia,True,https://cartesia.ai/llms.txt,True,True,True,Free|Pro|Scale|Enterprise,"Free, Pro, Scale, Enterprise ($0, $1, $5, $49)",0,Google Workspace
+livekit.io,LiveKit,True,https://livekit.io/llms.txt,True,True,False,Plus|Pro|Team|Scale|Enterprise,"Plus, Pro, Team, Scale ($0/mo, $50/mo, $500/mo, $0.0100)",18,Google Workspace
+daily.co,Daily,False,,True,False,True,,Enterprise / Custom,14,Google Workspace
+twilio.com,Twilio,True,https://twilio.com/llms.txt,True,True,True,,"$0.0002/1k, $0.005/1k, $0.002/1k, $0.018/1k",18,Google Workspace
+clerk.com,Clerk,True,https://clerk.com/llms.txt,True,True,False,Free|Hobby|Pro|Business|Enterprise,"Free, Hobby, Pro, Business ($20, $0.02/mo, $75/mo, $10/mo)",34,Google Workspace
+auth0.com,Auth0 by Okta,True,https://auth0.com/llms.txt,True,True,False,Free|Professional|Enterprise,"Free, Professional, Enterprise ($0, $35, $240, $5,000)",13,Custom
+workos.com,WorkOS,True,https://workos.com/llms.txt,True,True,True,Free|Scale|Enterprise,"Free, Scale, Enterprise ($0, $2,500, $125, $100)",35,Google Workspace
+stytch.com,Stytch,True,https://stytch.com/llms.txt,True,True,True,Free|Enterprise,"Free, Enterprise ($0, $99, $125)",18,Google Workspace
+upstash.com,Upstash,True,https://upstash.com/llms.txt,True,True,True,Free|Enterprise,"Free, Enterprise ($0, $0.2, $10, $5)",38,Google Workspace
+turso.tech,Turso,True,https://turso.tech/llms.txt,True,True,False,Free|Pro|Enterprise,"Free, Pro, Enterprise ($0/mo, $4.99/mo, $1/mo, $0.75)",15,Google Workspace
+planetscale.com,"PlanetScale, Inc.",True,https://planetscale.com/llms.txt,True,False,False,,"$30, $10, $39, $13",72,Google Workspace
+convex.dev,Convex,True,https://convex.dev/llms.txt,True,True,True,Free|Starter|Professional|Business|Enterprise,"Free, Starter, Professional, Business ($0/mo, $25, $2,500, $2.20)",18,Google Workspace
+railway.com,Railway,True,https://railway.com/llms.txt,True,True,True,Free|Hobby|Pro|Enterprise,"Free, Hobby, Pro, Enterprise ($0/mo, $5, $1, $20)",81,Google Workspace
+render.com,Render,True,https://render.com/llms.txt,True,True,True,Hobby|Pro|Scale|Enterprise,"Hobby, Pro, Scale, Enterprise ($0/mo, $25/mo, $499/mo, $100)",18,Google Workspace
+fly.io,Fly.io,True,https://fly.io/llms.txt,True,True,True,Free|Enterprise,"Free, Enterprise ($0, $5, $0.0030, $2.19)",14,Google Workspace
+netlify.com,Netlify,True,https://netlify.com/llms.txt,True,True,True,Free|Pro|Enterprise,"Free, Pro, Enterprise ($0, $9, $20, $1)",17,Google Workspace
+digitalocean.com,DigitalOcean,True,https://digitalocean.com/llms.txt,True,True,True,,"$0.0535, $0.10, $0.05, $1.91",0,Google Workspace
+hetzner.com,Hetzner,False,,False,False,False,,—,0,Custom
+tailscale.com,Tailscale,True,https://tailscale.com/llms.txt,True,True,False,Free|Enterprise,"Free, Enterprise ($0, $8, $18, $5/mo)",0,Google Workspace
+ngrok.com,ngrok,True,https://ngrok.com/llms.txt,True,True,True,Free|Basic|Enterprise,"Free, Basic, Enterprise ($5, $0, $10, $24)",18,Google Workspace
+doppler.com,Doppler,False,,True,True,False,Team|Enterprise,"Team, Enterprise ($8/mo, $21/mo, $250,000, $9/seat)",84,Google Workspace
+infisical.com,Infisical,True,https://infisical.com/llms.txt,True,True,False,Free,"Free ($00, $20, $2200, $40)",42,Google Workspace
+vanta.com,Vanta,False,,True,False,False,,Enterprise / Custom,0,Google Workspace
+drata.com,drata.com,False,,False,False,False,,—,0,Google Workspace
+snyk.io,Snyk,True,https://snyk.io/llms.txt,True,True,True,Free|Team|Enterprise,"Free, Team, Enterprise ($0, $25, $1)",0,Google Workspace
+datadoghq.com,Datadog,True,https://datadoghq.com/llms.txt,True,True,True,Basic|Pro|Enterprise,"Basic, Pro, Enterprise ($500, $1.30, $8, $12)",119,Google Workspace
+grafana.com,Grafana Labs,True,https://grafana.com/llms.txt,True,True,True,,"$0, $19, $25,000, $6.50",38,Google Workspace
+clickhouse.com,ClickHouse,True,https://clickhouse.com/llms.txt,True,True,True,Free|Basic|Scale|Enterprise,"Free, Basic, Scale, Enterprise ($300, $25.30, $0.2181, $0.2985)",0,Google Workspace
+motherduck.com,MotherDuck,True,https://motherduck.com/llms.txt,True,False,True,Business,"Business ($0, $250, $0.04, $0.60)",68,Google Workspace
+airbyte.com,Airbyte,True,https://airbyte.com/llms.txt,True,True,True,Free,"Free ($20, $189, $449, $999)",0,Google Workspace
+fivetran.com,Fivetran,True,https://fivetran.com/llms.txt,True,True,True,Free|Professional|Business|Enterprise,"Free, Professional, Business, Enterprise ($22.06, $15.88, $424.54, $48.67)",0,Google Workspace
+hex.tech,Hex,True,https://hex.tech/llms.txt,True,False,False,Professional|Team|Enterprise,"Professional, Team, Enterprise ($100, $0.32, $0.65, $1.29)",16,Google Workspace
+retool.com,Retool,True,https://retool.com/llms.txt,True,True,True,Free|Team|Business|Enterprise,"Free, Team, Business, Enterprise ($0, $10, $5, $50)",44,Google Workspace
+n8n.io,n8n,True,https://n8n.io/llms.txt,True,False,False,Starter|Pro|Business|Enterprise,"Starter, Pro, Business, Enterprise",81,Google Workspace
+zapier.com,Zapier,True,https://zapier.com/llms.txt,True,True,False,Free|Pro|Professional|Team|Enterprise,"Free, Pro, Professional, Team ($0/mo, $19.99/mo, $69/mo, $400)",0,Google Workspace
+make.com,Make,True,https://make.com/llms.txt,True,True,False,,Enterprise / Custom,0,Google Workspace
+clay.com,Clay,False,,True,True,True,Free|Growth|Enterprise,"Free, Growth, Enterprise ($115, $167/mo, $54/mo, $60/mo)",16,Google Workspace
+attio.com,Attio,True,https://attio.com/llms.txt,True,True,True,Free|Plus|Pro,"Free, Plus, Pro ($00, $5040, $44, $125100)",18,Google Workspace
+cal.com,Cal.com,True,https://cal.com/llms.txt,True,True,False,Teams|Enterprise,"Teams, Enterprise ($12, $28, $12/mo, $28/mo)",15,Google Workspace
+dub.co,Dub,True,https://dub.co/llms.txt,True,False,False,Business|Enterprise,"Business, Enterprise ($90/mo, $300/mo, $2,500, $15,000)",31,Google Workspace
+loops.so,Loops,True,https://loops.so/llms.txt,True,True,False,Free|Growth,"Free, Growth ($0, $49)",0,Google Workspace
+knock.app,Knock,True,https://knock.app/llms.txt,True,True,True,Free|Starter|Enterprise,"Free, Starter, Enterprise ($0, $0.01, $250, $0.005)",34,Google Workspace
+inngest.com,Inngest,True,https://inngest.com/llms.txt,True,True,True,Free|Pro|Business|Enterprise,"Free, Pro, Business, Enterprise ($0/mo, $99/mo, $499/mo, $0.000011)",19,Google Workspace
+trigger.dev,Trigger.dev,True,https://trigger.dev/llms.txt,True,True,False,Free|Hobby|Pro|Enterprise,"Free, Hobby, Pro, Enterprise ($0/mo, $5, $10/mo, $10)",0,Google Workspace
+temporal.io,Temporal,True,https://temporal.io/llms.txt,True,True,False,Free|Teams|Business|Enterprise,"Free, Teams, Business, Enterprise ($150, $50, $0.042, $0.00105)",19,Google Workspace
+launchdarkly.com,LaunchDarkly,False,,True,True,True,Free|Enterprise,"Free, Enterprise ($0, $10, $12, $8.33/1k)",0,Google Workspace
+statsig.com,Statsig,False,,True,True,True,Free|Core|Pro|Teams|Enterprise,"Free, Core, Pro, Teams ($150, $0.05, $150/mo)",0,Google Workspace
+mixpanel.com,Mixpanel,True,https://mixpanel.com/llms.txt,True,True,False,Free|Growth|Enterprise,"Free, Growth, Enterprise ($0, $8, $100, $140)",40,Google Workspace
+amplitude.com,Amplitude,True,https://amplitude.com/llms.txt,True,True,False,Free|Plus|Growth|Team|Enterprise,"Free, Plus, Growth, Team ($0, $10)",0,Google Workspace
+notion.so,Notion,True,https://notion.so/llms.txt,True,True,False,Free|Plus|Business|Enterprise,"Free, Plus, Business, Enterprise ($0, $10, $20, $8/mo)",19,Unknown
+figma.com,Figma,False,,True,True,True,Free|Starter|Professional|Enterprise,"Free, Starter, Professional, Enterprise ($16/mo, $12/mo, $3/mo, $55/mo)",15,Google Workspace
+webflow.com,Webflow,True,https://webflow.com/llms.txt,True,True,True,Free|Starter|Basic|Core|Plus|Growth|Team|Enterprise,"Free, Starter, Basic, Core ($2, $20/mo, $30/mo, $40/mo)",0,Google Workspace
+framer.com,Framer: Free website builder and AI design agent,True,https://framer.com/llms.txt,True,True,False,Free|Basic|Pro|Enterprise,"Free, Basic, Pro, Enterprise ($0, $10, $30, $20)",16,Google Workspace
+airtable.com,Airtable,False,,True,True,False,Business|Scale|Enterprise,"Business, Scale, Enterprise ($20/user, $45/user)",0,Google Workspace
+loom.com,Loom,True,https://loom.com/llms.txt,True,False,False,Starter|Team|Business|Enterprise,"Starter, Team, Business, Enterprise ($0, $18, $24)",0,Custom
+intercom.com,Intercom,True,https://intercom.com/llms.txt,True,False,True,Plus|Pro,"Plus, Pro ($29, $0.99, $85, $10)",18,Google Workspace
+hubspot.com,HubSpot,True,https://hubspot.com/llms.txt,False,False,False,,—,0,Google Workspace
+klaviyo.com,Klaviyo,True,https://klaviyo.com/llms.txt,True,True,False,Free|Enterprise,"Free, Enterprise ($10, $5, $20/mo, $25)",105,Google Workspace
+ramp.com,Ramp,False,,True,True,False,Free|Plus|Enterprise,"Free, Plus, Enterprise ($0/mo, $15/mo, $10)",0,Google Workspace
+brex.com,Brex,True,https://brex.com/llms.txt,True,False,False,Business|Enterprise,"Business, Enterprise ($0, $12, $1.00)",14,Google Workspace
+mercury.com,Mercury,False,,True,True,False,Plus|Pro,"Plus, Pro ($0/mo, $35/mo, $100/mo, $50)",54,Google Workspace
+rippling.com,Rippling,True,https://rippling.com/llms.txt,True,False,False,,$8,47,Google Workspace
+deel.com,Deel,True,https://deel.com/llms.txt,True,False,False,,"$14, $49, $325, $125",0,Google Workspace

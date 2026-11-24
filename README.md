@@ -62,3 +62,35 @@ Import the ready-to-run workflow (**B2B Domain Contacts, SaaS /pricing & /llms.t
 - [B2B Website Email, Phone & Social Links Extractor](https://apify.com/spiky_closet/website-contacts-pricing-intel/examples/b2b-website-email-phone-social-extractor)
 - [SaaS Pricing Page & Tier Plan Extractor](https://apify.com/spiky_closet/website-contacts-pricing-intel/examples/saas-pricing-page-tier-scraper)
 - [Website to Clean LLM Markdown & llms.txt Extractor](https://apify.com/spiky_closet/website-contacts-pricing-intel/examples/website-to-llm-markdown-llms-txt-brief)
+## Live Interactive Top-100 Benchmark (Nov 2026)
+
+Explore our live open dataset of **100 leading DevTools & AI companies** enriched in `8.37s` (`0` crashes):
+- **Interactive Web Explorer:** https://yun87457-web.github.io/website-contacts-pricing-mcp/
+- **Open Downloads (MIT):** [`benchmarks/top-100-nov-2026.csv`](./benchmarks/top-100-nov-2026.csv) · [`benchmarks/top-100-nov-2026.json`](./benchmarks/top-100-nov-2026.json)
+- **Key Findings:** **`80%`** already ship `/llms.txt` for AI agents, with public `/pricing` tier structures, PLG free-tier flags, and usage-based billing signals extracted in a single call.
+
+## Install & Run Locally (Stdio MCP Server — Zero Dependencies)
+
+Run directly in Claude Desktop, Cursor, Windsurf, or Cline using Node.js 18+ (supports either `APIFY_TOKEN` or `RAPIDAPI_KEY`):
+
+```bash
+npx -y github:yun87457-web/website-contacts-pricing-mcp
+```
+
+```json
+{
+  "mcpServers": {
+    "website-contacts-pricing": {
+      "command": "npx",
+      "args": ["-y", "github:yun87457-web/website-contacts-pricing-mcp"],
+      "env": { "RAPIDAPI_KEY": "YOUR_FREE_RAPIDAPI_KEY" }
+    }
+  }
+}
+```
+
+## No-Code Recipes (n8n, Make.com & Clay)
+
+- **n8n Workflow JSON:** [`n8n-template.json`](./n8n-template.json) (and community node scaffold in [`n8n-community-node/`](./n8n-community-node/))
+- **Clay HTTP Enrichment:** [`integrations/clay-http-enrichment.json`](./integrations/clay-http-enrichment.json)
+- **Make.com HTTP Module:** [`integrations/make-http-module.json`](./integrations/make-http-module.json)

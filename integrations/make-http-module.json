@@ -1,0 +1,22 @@
+{
+  "name": "SiteBrief \u2014 Enrich B2B Domain Contacts, Pricing & /llms.txt",
+  "module": "http:ActionSendData",
+  "url": "https://website-contacts-socials-pricing-llm-brief-api.p.rapidapi.com/enrich",
+  "method": "GET",
+  "qs": [
+    {
+      "name": "domain",
+      "value": "{{1.domain}}"
+    }
+  ],
+  "headers": [
+    {
+      "name": "x-rapidapi-key",
+      "value": "{{YOUR_RAPIDAPI_KEY}}"
+    },
+    {
+      "name": "x-rapidapi-host",
+      "value": "website-contacts-socials-pricing-llm-brief-api.p.rapidapi.com"
+    }
+  ]
+}

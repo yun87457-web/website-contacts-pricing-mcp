@@ -1,0 +1,1638 @@
+[
+  {
+    "domain": "anthropic.com",
+    "companyName": "Home \\ Anthropic",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Team, Enterprise ($0, $17, $200, $20)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://anthropic.com/pricing"
+  },
+  {
+    "domain": "openai.com",
+    "companyName": "OpenAI",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Pro",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Plus, Pro, Business",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://openai.com/pricing"
+  },
+  {
+    "domain": "stripe.com",
+    "companyName": "Stripe",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "$5.00, $15.00, $29.00, $0.03",
+    "emailCount": 16,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://stripe.com/llms.txt"
+  },
+  {
+    "domain": "cloudflare.com",
+    "companyName": "Cloudflare",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Business",
+      "Scale"
+    ],
+    "pricingSummary": "Free, Pro, Business, Scale ($0, $20, $25/mo, $200)",
+    "emailCount": 0,
+    "emailProvider": "Custom",
+    "linkUrl": "https://cloudflare.com/llms.txt"
+  },
+  {
+    "domain": "vercel.com",
+    "companyName": "Vercel",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Hobby",
+      "Core",
+      "Pro",
+      "Scale"
+    ],
+    "pricingSummary": "Hobby, Core, Pro, Scale ($0/mo, $20/mo, $20, $0.50)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://vercel.com/llms.txt"
+  },
+  {
+    "domain": "supabase.com",
+    "companyName": "Supabase",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Team",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Team, Scale ($0, $25, $10/mo, $0.00325)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://supabase.com/llms.txt"
+  },
+  {
+    "domain": "neon.tech",
+    "companyName": "Neon",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Scale"
+    ],
+    "pricingSummary": "Free, Scale ($0, $15/mo, $0.106, $0.35)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://neon.tech/llms.txt"
+  },
+  {
+    "domain": "resend.com",
+    "companyName": "Resend",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "$20, $30, $150, $1",
+    "emailCount": 84,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://resend.com/llms.txt"
+  },
+  {
+    "domain": "mintlify.com",
+    "companyName": "Mintlify",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Pro, Enterprise ($0/mo, $150/mo, $180/mo, $450/mo)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://mintlify.com/llms.txt"
+  },
+  {
+    "domain": "linear.app",
+    "companyName": "linear.app",
+    "hasLlmsTxt": false,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://linear.app"
+  },
+  {
+    "domain": "posthog.com",
+    "companyName": "PostHog",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free ($5, $25, $20, $2)",
+    "emailCount": 17,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://posthog.com/llms.txt"
+  },
+  {
+    "domain": "sentry.io",
+    "companyName": "Sentry",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Team",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Team, Business, Enterprise ($0, $26/mo, $80/mo, $0.50)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://sentry.io/llms.txt"
+  },
+  {
+    "domain": "cursor.com",
+    "companyName": "Cursor",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Teams"
+    ],
+    "pricingSummary": "Free, Plus, Teams ($0/mo, $8/mo, $30/mo, $100/mo)",
+    "emailCount": 13,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://cursor.com/llms.txt"
+  },
+  {
+    "domain": "perplexity.ai",
+    "companyName": "perplexity.ai",
+    "hasLlmsTxt": false,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://perplexity.ai"
+  },
+  {
+    "domain": "elevenlabs.io",
+    "companyName": "ElevenLabs",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Pro",
+      "Business",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Pro, Business ($1, $0/mo, $60, $6)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://elevenlabs.io/llms.txt"
+  },
+  {
+    "domain": "firecrawl.dev",
+    "companyName": "Firecrawl",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Hobby",
+      "Growth",
+      "Team",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Hobby, Growth, Team ($75, $83/mo, $0, $16)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://firecrawl.dev/llms.txt"
+  },
+  {
+    "domain": "exa.ai",
+    "companyName": "Exa",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Growth",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Growth, Enterprise ($15,000, $120, $10, $4)",
+    "emailCount": 59,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://exa.ai/llms.txt"
+  },
+  {
+    "domain": "browserbase.com",
+    "companyName": "Browserbase",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Scale"
+    ],
+    "pricingSummary": "Free, Scale ($0/mo, $5, $20/mo, $0.12)",
+    "emailCount": 23,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://browserbase.com/llms.txt"
+  },
+  {
+    "domain": "e2b.dev",
+    "companyName": "E2B",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Hobby",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Hobby, Pro, Enterprise ($100, $150, $500, $1,000/mo)",
+    "emailCount": 33,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://e2b.dev/llms.txt"
+  },
+  {
+    "domain": "modal.com",
+    "companyName": "Modal",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Starter",
+      "Pro",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Starter, Pro, Team, Enterprise ($0.001972, $0.001736, $0.001261, $0.001097)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://modal.com/llms.txt"
+  },
+  {
+    "domain": "replicate.com",
+    "companyName": "Replicate",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Pro, Enterprise ($0.04, $0.025, $3.00, $0.01)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://replicate.com/llms.txt"
+  },
+  {
+    "domain": "together.ai",
+    "companyName": "Together AI",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free ($1.40, $0.26, $4.40, $0.30)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://together.ai/llms.txt"
+  },
+  {
+    "domain": "groq.com",
+    "companyName": "Groq",
+    "hasLlmsTxt": false,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://groq.com"
+  },
+  {
+    "domain": "fireworks.ai",
+    "companyName": "Fireworks",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Pro",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Pro, Team, Enterprise ($0.05, $3.00, $0.30, $15.00)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://fireworks.ai/llms.txt"
+  },
+  {
+    "domain": "pinecone.io",
+    "companyName": "Pinecone",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Starter",
+      "Enterprise"
+    ],
+    "pricingSummary": "Starter, Enterprise ($20/mo, $50/mo, $300, $500/mo)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://pinecone.io/llms.txt"
+  },
+  {
+    "domain": "weaviate.io",
+    "companyName": "Weaviate",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free ($0/mo, $45/mo, $0.025, $0.040)",
+    "emailCount": 38,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://weaviate.io/llms.txt"
+  },
+  {
+    "domain": "qdrant.tech",
+    "companyName": "Qdrant",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free",
+    "emailCount": 15,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://qdrant.tech/llms.txt"
+  },
+  {
+    "domain": "langchain.com",
+    "companyName": "Langchain",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Plus",
+      "Enterprise"
+    ],
+    "pricingSummary": "Plus, Enterprise ($0, $39, $10,000, $1.00)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://langchain.com/pricing"
+  },
+  {
+    "domain": "llamaindex.ai",
+    "companyName": "LlamaIndex",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Pro, Enterprise ($0/mo, $1.50, $500/mo, $1,000)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://llamaindex.ai/llms.txt"
+  },
+  {
+    "domain": "cohere.com",
+    "companyName": "Cohere",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Team"
+    ],
+    "pricingSummary": "Team ($3.00, $1.00, $3.25, $2.25)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://cohere.com/llms.txt"
+  },
+  {
+    "domain": "mistral.ai",
+    "companyName": "Mistral",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Team, Enterprise ($14.99, $24.99, $50, $0.5)",
+    "emailCount": 16,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://mistral.ai/llms.txt"
+  },
+  {
+    "domain": "huggingface.co",
+    "companyName": "Hugging Face",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Pro",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Pro, Team, Enterprise ($9/mo, $2, $20/mo, $500/mo)",
+    "emailCount": 20,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://huggingface.co/pricing"
+  },
+  {
+    "domain": "wandb.ai",
+    "companyName": "Forge",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Enterprise ($0/mo, $60/mo, $0.03, $0.10)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://wandb.ai/pricing"
+  },
+  {
+    "domain": "baseten.co",
+    "companyName": "Baseten",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "$0.10, $0.035, $0.01, $0.40",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://baseten.co/llms.txt"
+  },
+  {
+    "domain": "fal.ai",
+    "companyName": "fal",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "$2.49, $12.99, $5.99, $9.99",
+    "emailCount": 14,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://fal.ai/llms.txt"
+  },
+  {
+    "domain": "deepgram.com",
+    "companyName": "Deepgram",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Growth",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Growth, Enterprise ($200, $4,000, $0.0065, $0.0077)",
+    "emailCount": 96,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://deepgram.com/llms.txt"
+  },
+  {
+    "domain": "assemblyai.com",
+    "companyName": "Assemblyai",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0.62, $0.45, $0.30, $0.21)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://assemblyai.com/llms.txt"
+  },
+  {
+    "domain": "cartesia.ai",
+    "companyName": "Cartesia",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Scale, Enterprise ($0, $1, $5, $49)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://cartesia.ai/llms.txt"
+  },
+  {
+    "domain": "livekit.io",
+    "companyName": "LiveKit",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Plus",
+      "Pro",
+      "Team",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Plus, Pro, Team, Scale ($0/mo, $50/mo, $500/mo, $0.0100)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://livekit.io/llms.txt"
+  },
+  {
+    "domain": "daily.co",
+    "companyName": "Daily",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "Enterprise / Custom",
+    "emailCount": 14,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://daily.co/pricing"
+  },
+  {
+    "domain": "twilio.com",
+    "companyName": "Twilio",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "$0.0002/1k, $0.005/1k, $0.002/1k, $0.018/1k",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://twilio.com/llms.txt"
+  },
+  {
+    "domain": "clerk.com",
+    "companyName": "Clerk",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Hobby",
+      "Pro",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Hobby, Pro, Business ($20, $0.02/mo, $75/mo, $10/mo)",
+    "emailCount": 34,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://clerk.com/llms.txt"
+  },
+  {
+    "domain": "auth0.com",
+    "companyName": "Auth0 by Okta",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Professional",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Professional, Enterprise ($0, $35, $240, $5,000)",
+    "emailCount": 13,
+    "emailProvider": "Custom",
+    "linkUrl": "https://auth0.com/llms.txt"
+  },
+  {
+    "domain": "workos.com",
+    "companyName": "WorkOS",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Scale, Enterprise ($0, $2,500, $125, $100)",
+    "emailCount": 35,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://workos.com/llms.txt"
+  },
+  {
+    "domain": "stytch.com",
+    "companyName": "Stytch",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0, $99, $125)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://stytch.com/llms.txt"
+  },
+  {
+    "domain": "upstash.com",
+    "companyName": "Upstash",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0, $0.2, $10, $5)",
+    "emailCount": 38,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://upstash.com/llms.txt"
+  },
+  {
+    "domain": "turso.tech",
+    "companyName": "Turso",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Enterprise ($0/mo, $4.99/mo, $1/mo, $0.75)",
+    "emailCount": 15,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://turso.tech/llms.txt"
+  },
+  {
+    "domain": "planetscale.com",
+    "companyName": "PlanetScale, Inc.",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "$30, $10, $39, $13",
+    "emailCount": 72,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://planetscale.com/llms.txt"
+  },
+  {
+    "domain": "convex.dev",
+    "companyName": "Convex",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Professional",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Professional, Business ($0/mo, $25, $2,500, $2.20)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://convex.dev/llms.txt"
+  },
+  {
+    "domain": "railway.com",
+    "companyName": "Railway",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Hobby",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Hobby, Pro, Enterprise ($0/mo, $5, $1, $20)",
+    "emailCount": 81,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://railway.com/llms.txt"
+  },
+  {
+    "domain": "render.com",
+    "companyName": "Render",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Hobby",
+      "Pro",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Hobby, Pro, Scale, Enterprise ($0/mo, $25/mo, $499/mo, $100)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://render.com/llms.txt"
+  },
+  {
+    "domain": "fly.io",
+    "companyName": "Fly.io",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0, $5, $0.0030, $2.19)",
+    "emailCount": 14,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://fly.io/llms.txt"
+  },
+  {
+    "domain": "netlify.com",
+    "companyName": "Netlify",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Enterprise ($0, $9, $20, $1)",
+    "emailCount": 17,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://netlify.com/llms.txt"
+  },
+  {
+    "domain": "digitalocean.com",
+    "companyName": "DigitalOcean",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "$0.0535, $0.10, $0.05, $1.91",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://digitalocean.com/llms.txt"
+  },
+  {
+    "domain": "hetzner.com",
+    "companyName": "Hetzner",
+    "hasLlmsTxt": false,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Custom",
+    "linkUrl": "https://hetzner.com"
+  },
+  {
+    "domain": "tailscale.com",
+    "companyName": "Tailscale",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0, $8, $18, $5/mo)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://tailscale.com/llms.txt"
+  },
+  {
+    "domain": "ngrok.com",
+    "companyName": "ngrok",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Basic",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Basic, Enterprise ($5, $0, $10, $24)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://ngrok.com/llms.txt"
+  },
+  {
+    "domain": "doppler.com",
+    "companyName": "Doppler",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Team, Enterprise ($8/mo, $21/mo, $250,000, $9/seat)",
+    "emailCount": 84,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://doppler.com/pricing"
+  },
+  {
+    "domain": "infisical.com",
+    "companyName": "Infisical",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free ($00, $20, $2200, $40)",
+    "emailCount": 42,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://infisical.com/llms.txt"
+  },
+  {
+    "domain": "vanta.com",
+    "companyName": "Vanta",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "Enterprise / Custom",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://vanta.com/pricing"
+  },
+  {
+    "domain": "drata.com",
+    "companyName": "drata.com",
+    "hasLlmsTxt": false,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://drata.com"
+  },
+  {
+    "domain": "snyk.io",
+    "companyName": "Snyk",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Team, Enterprise ($0, $25, $1)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://snyk.io/llms.txt"
+  },
+  {
+    "domain": "datadoghq.com",
+    "companyName": "Datadog",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Basic",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Basic, Pro, Enterprise ($500, $1.30, $8, $12)",
+    "emailCount": 119,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://datadoghq.com/llms.txt"
+  },
+  {
+    "domain": "grafana.com",
+    "companyName": "Grafana Labs",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [],
+    "pricingSummary": "$0, $19, $25,000, $6.50",
+    "emailCount": 38,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://grafana.com/llms.txt"
+  },
+  {
+    "domain": "clickhouse.com",
+    "companyName": "ClickHouse",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Basic",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Basic, Scale, Enterprise ($300, $25.30, $0.2181, $0.2985)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://clickhouse.com/llms.txt"
+  },
+  {
+    "domain": "motherduck.com",
+    "companyName": "MotherDuck",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Business"
+    ],
+    "pricingSummary": "Business ($0, $250, $0.04, $0.60)",
+    "emailCount": 68,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://motherduck.com/llms.txt"
+  },
+  {
+    "domain": "airbyte.com",
+    "companyName": "Airbyte",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free"
+    ],
+    "pricingSummary": "Free ($20, $189, $449, $999)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://airbyte.com/llms.txt"
+  },
+  {
+    "domain": "fivetran.com",
+    "companyName": "Fivetran",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Professional",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Professional, Business, Enterprise ($22.06, $15.88, $424.54, $48.67)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://fivetran.com/llms.txt"
+  },
+  {
+    "domain": "hex.tech",
+    "companyName": "Hex",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Professional",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Professional, Team, Enterprise ($100, $0.32, $0.65, $1.29)",
+    "emailCount": 16,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://hex.tech/llms.txt"
+  },
+  {
+    "domain": "retool.com",
+    "companyName": "Retool",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Team",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Team, Business, Enterprise ($0, $10, $5, $50)",
+    "emailCount": 44,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://retool.com/llms.txt"
+  },
+  {
+    "domain": "n8n.io",
+    "companyName": "n8n",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Starter",
+      "Pro",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Starter, Pro, Business, Enterprise",
+    "emailCount": 81,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://n8n.io/llms.txt"
+  },
+  {
+    "domain": "zapier.com",
+    "companyName": "Zapier",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Professional",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Professional, Team ($0/mo, $19.99/mo, $69/mo, $400)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://zapier.com/llms.txt"
+  },
+  {
+    "domain": "make.com",
+    "companyName": "Make",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "Enterprise / Custom",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://make.com/llms.txt"
+  },
+  {
+    "domain": "clay.com",
+    "companyName": "Clay",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Growth",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Growth, Enterprise ($115, $167/mo, $54/mo, $60/mo)",
+    "emailCount": 16,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://clay.com/pricing"
+  },
+  {
+    "domain": "attio.com",
+    "companyName": "Attio",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Pro"
+    ],
+    "pricingSummary": "Free, Plus, Pro ($00, $5040, $44, $125100)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://attio.com/llms.txt"
+  },
+  {
+    "domain": "cal.com",
+    "companyName": "Cal.com",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Teams",
+      "Enterprise"
+    ],
+    "pricingSummary": "Teams, Enterprise ($12, $28, $12/mo, $28/mo)",
+    "emailCount": 15,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://cal.com/llms.txt"
+  },
+  {
+    "domain": "dub.co",
+    "companyName": "Dub",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Business, Enterprise ($90/mo, $300/mo, $2,500, $15,000)",
+    "emailCount": 31,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://dub.co/llms.txt"
+  },
+  {
+    "domain": "loops.so",
+    "companyName": "Loops",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Growth"
+    ],
+    "pricingSummary": "Free, Growth ($0, $49)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://loops.so/llms.txt"
+  },
+  {
+    "domain": "knock.app",
+    "companyName": "Knock",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Enterprise ($0, $0.01, $250, $0.005)",
+    "emailCount": 34,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://knock.app/llms.txt"
+  },
+  {
+    "domain": "inngest.com",
+    "companyName": "Inngest",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Pro",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Pro, Business, Enterprise ($0/mo, $99/mo, $499/mo, $0.000011)",
+    "emailCount": 19,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://inngest.com/llms.txt"
+  },
+  {
+    "domain": "trigger.dev",
+    "companyName": "Trigger.dev",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Hobby",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Hobby, Pro, Enterprise ($0/mo, $5, $10/mo, $10)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://trigger.dev/llms.txt"
+  },
+  {
+    "domain": "temporal.io",
+    "companyName": "Temporal",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Teams",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Teams, Business, Enterprise ($150, $50, $0.042, $0.00105)",
+    "emailCount": 19,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://temporal.io/llms.txt"
+  },
+  {
+    "domain": "launchdarkly.com",
+    "companyName": "LaunchDarkly",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($0, $10, $12, $8.33/1k)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://launchdarkly.com/pricing"
+  },
+  {
+    "domain": "statsig.com",
+    "companyName": "Statsig",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Core",
+      "Pro",
+      "Teams",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Core, Pro, Teams ($150, $0.05, $150/mo)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://statsig.com/pricing"
+  },
+  {
+    "domain": "mixpanel.com",
+    "companyName": "Mixpanel",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Growth",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Growth, Enterprise ($0, $8, $100, $140)",
+    "emailCount": 40,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://mixpanel.com/llms.txt"
+  },
+  {
+    "domain": "amplitude.com",
+    "companyName": "Amplitude",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Growth",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Plus, Growth, Team ($0, $10)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://amplitude.com/llms.txt"
+  },
+  {
+    "domain": "notion.so",
+    "companyName": "Notion",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Plus, Business, Enterprise ($0, $10, $20, $8/mo)",
+    "emailCount": 19,
+    "emailProvider": "Unknown",
+    "linkUrl": "https://notion.so/llms.txt"
+  },
+  {
+    "domain": "figma.com",
+    "companyName": "Figma",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Professional",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Professional, Enterprise ($16/mo, $12/mo, $3/mo, $55/mo)",
+    "emailCount": 15,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://figma.com/pricing"
+  },
+  {
+    "domain": "webflow.com",
+    "companyName": "Webflow",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Free",
+      "Starter",
+      "Basic",
+      "Core",
+      "Plus",
+      "Growth",
+      "Team",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Starter, Basic, Core ($2, $20/mo, $30/mo, $40/mo)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://webflow.com/llms.txt"
+  },
+  {
+    "domain": "framer.com",
+    "companyName": "Framer: Free website builder and AI design agent",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Basic",
+      "Pro",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Basic, Pro, Enterprise ($0, $10, $30, $20)",
+    "emailCount": 16,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://framer.com/llms.txt"
+  },
+  {
+    "domain": "airtable.com",
+    "companyName": "Airtable",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Business",
+      "Scale",
+      "Enterprise"
+    ],
+    "pricingSummary": "Business, Scale, Enterprise ($20/user, $45/user)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://airtable.com/pricing"
+  },
+  {
+    "domain": "loom.com",
+    "companyName": "Loom",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Starter",
+      "Team",
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Starter, Team, Business, Enterprise ($0, $18, $24)",
+    "emailCount": 0,
+    "emailProvider": "Custom",
+    "linkUrl": "https://loom.com/llms.txt"
+  },
+  {
+    "domain": "intercom.com",
+    "companyName": "Intercom",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": true,
+    "tierNames": [
+      "Plus",
+      "Pro"
+    ],
+    "pricingSummary": "Plus, Pro ($29, $0.99, $85, $10)",
+    "emailCount": 18,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://intercom.com/llms.txt"
+  },
+  {
+    "domain": "hubspot.com",
+    "companyName": "HubSpot",
+    "hasLlmsTxt": true,
+    "hasPricing": false,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "\u2014",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://hubspot.com/llms.txt"
+  },
+  {
+    "domain": "klaviyo.com",
+    "companyName": "Klaviyo",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Enterprise ($10, $5, $20/mo, $25)",
+    "emailCount": 105,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://klaviyo.com/llms.txt"
+  },
+  {
+    "domain": "ramp.com",
+    "companyName": "Ramp",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Free",
+      "Plus",
+      "Enterprise"
+    ],
+    "pricingSummary": "Free, Plus, Enterprise ($0/mo, $15/mo, $10)",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://ramp.com/pricing"
+  },
+  {
+    "domain": "brex.com",
+    "companyName": "Brex",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Business",
+      "Enterprise"
+    ],
+    "pricingSummary": "Business, Enterprise ($0, $12, $1.00)",
+    "emailCount": 14,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://brex.com/llms.txt"
+  },
+  {
+    "domain": "mercury.com",
+    "companyName": "Mercury",
+    "hasLlmsTxt": false,
+    "hasPricing": true,
+    "hasFreeTier": true,
+    "hasUsageBased": false,
+    "tierNames": [
+      "Plus",
+      "Pro"
+    ],
+    "pricingSummary": "Plus, Pro ($0/mo, $35/mo, $100/mo, $50)",
+    "emailCount": 54,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://mercury.com/pricing"
+  },
+  {
+    "domain": "rippling.com",
+    "companyName": "Rippling",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "$8",
+    "emailCount": 47,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://rippling.com/llms.txt"
+  },
+  {
+    "domain": "deel.com",
+    "companyName": "Deel",
+    "hasLlmsTxt": true,
+    "hasPricing": true,
+    "hasFreeTier": false,
+    "hasUsageBased": false,
+    "tierNames": [],
+    "pricingSummary": "$14, $49, $325, $125",
+    "emailCount": 0,
+    "emailProvider": "Google Workspace",
+    "linkUrl": "https://deel.com/llms.txt"
+  }
+]

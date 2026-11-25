@@ -3,8 +3,14 @@
 # Website Contacts, Socials, Pricing & LLM Brief — REST API & MCP Server
 
 [![Website Contacts, Pricing & LLM Brief MCP connector](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp)
+[![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/yun87457-web/website-contacts-pricing-mcp)
 
 Extract verified emails (with role classification), phone numbers, `12+` social profiles, SaaS `/pricing` tiers & PLG flags, DNS `MX`/`SPF` email provider signals, and `/llms.txt` or clean Markdown company briefs from any company domain or work email.
+
+### `/llms.txt` Conditional Freshness & Live `/pricing` Isolation (`v1.1`)
+- **Exposes HTTP cache validators:** Every `/llms.txt` enrichment returns `llmsTxtEtag`, `llmsTxtLastModified`, `llmsTxtCacheControl`, `llmsTxtCacheStatus` (`miss` | `hit` | `revalidated_304` | `not_modified_304`), `llmsTxtNotModified`, and `llmsTxtFetchedAt`.
+- **Short-TTL revalidation (`If-None-Match` / `If-Modified-Since`):** Caps overly long upstream `Cache-Control` headers with a configurable short local TTL (`llmsCacheTtlSeconds`, default `300s`, `0–3600s`) and supports stateless caller validators (`llmsIfNoneMatch`, `llmsIfModifiedSince`) handling `HTTP 304 Not Modified` without re-downloading unchanged bodies.
+- **Pricing never goes stale:** `/pricing` pages are always fetched live (`Cache-Control: no-cache`) completely independently of `/llms.txt` caching, so pricing tier changes appear immediately even when a domain serves long `Cache-Control` headers on `/llms.txt`.
 
 ## Access Channels
 

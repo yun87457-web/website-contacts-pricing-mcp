@@ -12,7 +12,7 @@
 import readline from "node:readline";
 
 const SERVER_NAME = "sitebrief-website-contacts-pricing-mcp";
-const SERVER_VERSION = "1.1.1";
+const SERVER_VERSION = "1.1.2";
 const APIFY_MCP_URL = process.env.MCP_ENDPOINT_OVERRIDE || "https://spiky-closet--website-contacts-pricing-intel.apify.actor/mcp";
 const APIFY_URL = "https://apify.com/spiky_closet/website-contacts-pricing-intel";
 const RAPIDAPI_URL = "https://rapidapi.com/HYunLe/api/website-contacts-socials-pricing-llm-brief-api";
@@ -42,6 +42,21 @@ const TOOLS = [
         "includePricing": {
           "default": true,
           "type": "boolean"
+        },
+        "llmsCacheTtlSeconds": {
+          "default": 300,
+          "description": "Short-lived local TTL (seconds) for /llms.txt in Standby mode (caps long upstream Cache-Control headers; 0 = always revalidate via If-None-Match/If-Modified-Since). /pricing is always fetched live.",
+          "maximum": 3600,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "llmsIfModifiedSince": {
+          "description": "Optional HTTP-date (RFC1123) from a prior run to send as If-Modified-Since on /llms.txt.",
+          "type": "string"
+        },
+        "llmsIfNoneMatch": {
+          "description": "Optional ETag from a prior run to send as If-None-Match on /llms.txt (returns llmsTxtNotModified=true on HTTP 304 while still fetching /pricing live).",
+          "type": "string"
         },
         "maxPagesPerDomain": {
           "default": 4,
@@ -93,6 +108,21 @@ const TOOLS = [
         "includePricing": {
           "default": true,
           "type": "boolean"
+        },
+        "llmsCacheTtlSeconds": {
+          "default": 300,
+          "description": "Short-lived local TTL (seconds) for /llms.txt in Standby mode (caps long upstream Cache-Control headers; 0 = always revalidate via If-None-Match/If-Modified-Since). /pricing is always fetched live.",
+          "maximum": 3600,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "llmsIfModifiedSince": {
+          "description": "Optional HTTP-date (RFC1123) from a prior run to send as If-Modified-Since on /llms.txt.",
+          "type": "string"
+        },
+        "llmsIfNoneMatch": {
+          "description": "Optional ETag from a prior run to send as If-None-Match on /llms.txt (returns llmsTxtNotModified=true on HTTP 304 while still fetching /pricing live).",
+          "type": "string"
         },
         "maxPagesPerDomain": {
           "default": 4,

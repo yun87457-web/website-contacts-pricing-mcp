@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://yun87457-web.github.io/website-contacts-pricing-mcp/sitemap.xml

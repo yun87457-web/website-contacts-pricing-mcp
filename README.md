@@ -2,6 +2,7 @@
 
 # Website Contacts, Socials, Pricing & LLM Brief — REST API & MCP Server
 
+[![yun87457-web/website-contacts-pricing-mcp MCP server](https://glama.ai/mcp/servers/yun87457-web/website-contacts-pricing-mcp/badges/score.svg)](https://glama.ai/mcp/servers/yun87457-web/website-contacts-pricing-mcp)
 [![Website Contacts, Pricing & LLM Brief MCP connector](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.yun87457-web/website-contacts-pricing-intel-mcp)
 [![Listed on mcpservers.org](https://mcpservers.org/badge.svg)](https://mcpservers.org/servers/yun87457-web/website-contacts-pricing-mcp)
 

@@ -21,5 +21,23 @@
         }
       ]
     }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "sitebrief-website-contacts-pricing-mcp",
+      "version": "1.1.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_TOKEN",
+          "description": "Optional Apify API token for full batch & MCP quota (works keyless in free trial mode)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
   ]
 }

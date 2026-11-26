@@ -28,5 +28,6 @@
     "type": "git",
     "url": "https://github.com/yun87457-web/website-contacts-pricing-mcp.git"
   },
-  "homepage": "https://yun87457-web.github.io/website-contacts-pricing-mcp/"
+  "homepage": "https://yun87457-web.github.io/website-contacts-pricing-mcp/",
+  "mcpName": "io.github.yun87457-web/website-contacts-pricing-intel-mcp"
 }

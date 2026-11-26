@@ -58,6 +58,19 @@
   .mcp-box { margin-top:28px; background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 20px; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:14px; }
   code { background:#090d14; border:1px solid var(--border); padding:8px 12px; border-radius:8px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; color:#cbd5e1; display:inline-block; }
   footer { margin-top:34px; color:var(--muted); font-size:12.5px; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; }
+
+  .live-tester { background:var(--card); border:1px solid var(--border); border-radius:14px; padding:18px 20px; margin-bottom:22px; }
+  .live-tester h2 { margin:0 0 4px; font-size:17px; letter-spacing:-.01em; color:var(--text); }
+  .live-tester p { margin:0 0 12px; font-size:13.5px; color:var(--muted); }
+  .live-form { display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  .live-input { flex:1 1 260px; background:var(--bg); border:1px solid var(--border); color:var(--text); padding:10px 14px; border-radius:10px; font-size:14px; outline:none; }
+  .live-input:focus { border-color:var(--accent); }
+  .live-examples { display:flex; flex-wrap:wrap; gap:6px; margin-top:10px; align-items:center; font-size:12px; color:var(--muted); }
+  .live-ex-btn { background:rgba(255,255,255,.05); border:1px solid var(--border); color:var(--text); padding:4px 10px; border-radius:999px; font-size:12px; cursor:pointer; }
+  .live-ex-btn:hover { border-color:var(--accent); }
+  .live-out-wrap { margin-top:14px; display:none; }
+  .live-out-meta { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:8px; margin-bottom:8px; font-size:12.5px; color:var(--muted); }
+  .live-pre { margin:0; background:#060a10; border:1px solid var(--border); border-radius:10px; padding:14px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:12.5px; color:#d1fae5; overflow-x:auto; max-height:340px; white-space:pre-wrap; word-break:break-word; }
 </style>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "SiteBrief \u2014 Website Contacts, SaaS Pricing & /llms.txt MCP Server", "applicationCategory": "DeveloperApplication", "operatingSystem": "Any", "softwareVersion": "1.1.2", "url": "https://yun87457-web.github.io/website-contacts-pricing-mcp/", "downloadUrl": "https://apify.com/spiky_closet/website-contacts-pricing-intel", "sameAs": ["https://github.com/yun87457-web/website-contacts-pricing-mcp", "https://apify.com/spiky_closet/website-contacts-pricing-intel"], "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}}</script>
 </head>
@@ -77,6 +90,24 @@
       <a class="btn" href="https://github.com/yun87457-web/website-contacts-pricing-mcp" target="_blank" rel="noopener">GitHub Repo</a>
     </div>
   </header>
+
+  
+  <section class="live-tester" id="liveTesterSection">
+    <h2>Try Live Domain Enrichment (Free · No Signup · 10/day)</h2>
+    <p>Enter any company domain to fetch live contacts, socials, SaaS /pricing snippets, DNS email provider, and /llms.txt right now.</p>
+    <form class="live-form" id="liveTesterForm">
+      <input class="live-input" id="liveTesterInput" type="text" placeholder="e.g. stripe.com, linear.app, cloudflare.com" value="stripe.com" required>
+      <button class="btn primary" id="liveTesterBtn" type="submit">Run Live Test</button>
+    </form>
+    <div class="live-examples"><span>Quick examples:</span><button type="button" class="live-ex-btn" data-ex="stripe.com">stripe.com</button><button type="button" class="live-ex-btn" data-ex="linear.app">linear.app</button><button type="button" class="live-ex-btn" data-ex="cloudflare.com">cloudflare.com</button></div>
+    <div class="live-out-wrap" id="liveTesterOutWrap">
+      <div class="live-out-meta">
+        <span id="liveTesterStatus"></span>
+        <span>Need bulk batch runs or full API quota? <a href="https://apify.com/spiky_closet/website-contacts-pricing-intel" target="_blank" rel="noopener">Apify Store</a> · <a href="https://rapidapi.com/HYunLe/api/website-contacts-socials-pricing-llm-brief-api" target="_blank" rel="noopener">RapidAPI</a></span>
+      </div>
+      <pre class="live-pre" id="liveTesterPre"></pre>
+    </div>
+  </section>
 
   <section class="kpis" id="kpis"></section>
 
@@ -98,7 +129,7 @@
       <span style="color:var(--muted);font-size:13px;">Zero dependencies. Works with a free <code>APIFY_TOKEN</code> or <code>RAPIDAPI_KEY</code>.</span>
     </div>
     <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
-      <code id="mcpCmd">npx -y github:yun87457-web/website-contacts-pricing-mcp</code>
+      <code id="mcpCmd">npx -y sitebrief-website-contacts-pricing-mcp</code>
       <button class="btn" id="copyBtn" type="button">Copy</button>
     </div>
   </div>
@@ -223,5 +254,50 @@ fetch('./data.json').then(r => r.json()).then(rows => {
   renderTable();
 });
 </script>
+
+<script>
+(() => {
+  const form = document.getElementById("liveTesterForm");
+  const inp = document.getElementById("liveTesterInput");
+  const btn = document.getElementById("liveTesterBtn");
+  const wrap = document.getElementById("liveTesterOutWrap");
+  const statusEl = document.getElementById("liveTesterStatus");
+  const pre = document.getElementById("liveTesterPre");
+  if (!form) return;
+  async function runLive(val) {
+    const v = String(val || "").trim();
+    if (!v) return;
+    btn.disabled = true;
+    btn.textContent = "Running...";
+    wrap.style.display = "block";
+    statusEl.textContent = "Querying live edge endpoint...";
+    pre.textContent = "";
+    try {
+      const t0 = performance.now();
+      const res = await fetch("https://sitebrief-trial.mcp-edge-trial.workers.dev", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ tool: "enrich_company_domain", arguments: { "domain": v, maxResults: 5 } })
+      });
+      const data = await res.json();
+      const ms = Math.round(performance.now() - t0);
+      const rem = data && data._trial && typeof data._trial.remainingToday === "number" ? ` · ${data._trial.remainingToday}/${data._trial.limitPerDay} free tests left today` : "";
+      statusEl.textContent = res.ok ? `Live response in ${ms} ms${rem}` : `HTTP ${res.status}`;
+      pre.textContent = JSON.stringify(data, null, 2);
+    } catch (err) {
+      statusEl.textContent = "Request failed";
+      pre.textContent = String(err);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = "Run Live Test";
+    }
+  }
+  form.addEventListener("submit", (e) => { e.preventDefault(); runLive(inp.value); });
+  document.querySelectorAll("#liveTesterSection .live-ex-btn").forEach((b) => {
+    b.addEventListener("click", () => { inp.value = b.dataset.ex; runLive(b.dataset.ex); });
+  });
+})();
+</script>
+
 </body>
 </html>

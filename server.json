@@ -4,7 +4,7 @@
   "title": "Website Contacts, Socials, Pricing & LLM Brief MCP Server",
   "description": "Extract emails, socials, SaaS /pricing tiers, DNS MX/SPF, and /llms.txt briefs from any domain.",
   "repository": {
-    "url": "https://github.com/yun87457-web/adpulse-mcp-servers",
+    "url": "https://github.com/yun87457-web/website-contacts-pricing-mcp",
     "source": "github"
   },
   "version": "1.0.0",

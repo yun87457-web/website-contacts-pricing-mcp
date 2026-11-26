@@ -169,6 +169,9 @@ const TOOLS = [
   }
 ];
 
+const TRIAL_URL = "https://sitebrief-trial.mcp-edge-trial.workers.dev";
+const FETCH_TIMEOUT_MS = 45000;
+
 function writeMsg(msg) {
   process.stdout.write(JSON.stringify(msg) + "\n");
 }
@@ -181,7 +184,8 @@ async function proxyApifyMcp(payload, token) {
       "Accept": "application/json, text/event-stream",
       "Authorization": `Bearer ${token}`
     },
-    body: JSON.stringify(payload)
+    body: JSON.stringify(payload),
+    signal: AbortSignal.timeout(FETCH_TIMEOUT_MS)
   });
   const text = await res.text();
   if (!res.ok) {
@@ -208,21 +212,41 @@ async function callRapidApi(tool, args, key) {
     "x-rapidapi-key": key,
     "x-rapidapi-host": RAPIDAPI_HOST
   };
-  const init = { method: cfg.method, headers };
+  const payload = { ...(args || {}) };
+
+  const init = { method: cfg.method, headers, signal: AbortSignal.timeout(FETCH_TIMEOUT_MS) };
   if (cfg.method === "GET") {
     const qs = new URLSearchParams();
-    for (const [k, v] of Object.entries(args || {})) {
+    for (const [k, v] of Object.entries(payload)) {
       if (v !== undefined && v !== null) qs.set(k, String(v));
     }
     if ([...qs.keys()].length > 0) url += `?${qs.toString()}`;
   } else {
     headers["Content-Type"] = "application/json";
-    init.body = JSON.stringify(args || {});
+    init.body = JSON.stringify(payload);
   }
   const res = await fetch(url, init);
   const text = await res.text();
   if (!res.ok) {
     throw new Error(`RapidAPI HTTP ${res.status}: ${text.slice(0, 300)}`);
+  }
+  try {
+    return JSON.stringify(JSON.parse(text), null, 2);
+  } catch {
+    return text;
+  }
+}
+
+async function callZeroKeyTrial(toolName, args) {
+  const res = await fetch(TRIAL_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ tool: toolName, arguments: args || {} }),
+    signal: AbortSignal.timeout(30000)
+  });
+  const text = await res.text();
+  if (!res.ok) {
+    throw new Error(`Free trial HTTP ${res.status}: ${text.slice(0, 300)}`);
   }
   try {
     return JSON.stringify(JSON.parse(text), null, 2);
@@ -285,36 +309,72 @@ async function handleRequest(msg) {
     const args = params?.arguments || {};
     const apifyToken = process.env.APIFY_TOKEN;
     const rapidApiKey = process.env.RAPIDAPI_KEY;
+    const tool = TOOLS.find((t) => t.name === toolName);
+    if (!tool) {
+      return writeMsg({
+        jsonrpc: "2.0",
+        id,
+        result: {
+          isError: true,
+          content: [{ type: "text", text: `Unknown tool: ${toolName}. Available tools: ${TOOLS.map((t) => t.name).join(", ")}` }]
+        }
+      });
+    }
 
-    try {
-      if (apifyToken) {
+    let apifyErr = null;
+    if (apifyToken) {
+      try {
         const remote = await proxyApifyMcp({ jsonrpc: "2.0", id, method: "tools/call", params }, apifyToken);
-        if (remote?.result) {
+        if (remote?.result !== undefined) {
           return writeMsg({ jsonrpc: "2.0", id, result: remote.result });
         }
-        if (remote?.error) {
+        if (remote?.error !== undefined) {
           return writeMsg({ jsonrpc: "2.0", id, error: remote.error });
         }
+      } catch (err) {
+        apifyErr = err;
+        process.stderr.write(`[mcp] Apify call failed: ${err.message}\n`);
       }
-      if (rapidApiKey) {
-        const tool = TOOLS.find((t) => t.name === toolName) || TOOLS[0];
+    }
+
+    if (rapidApiKey) {
+      try {
         const out = await callRapidApi(tool, args, rapidApiKey);
         return writeMsg({
           jsonrpc: "2.0",
           id,
           result: { content: [{ type: "text", text: out }] }
         });
+      } catch (err) {
+        return writeMsg({
+          jsonrpc: "2.0",
+          id,
+          result: {
+            isError: true,
+            content: [{ type: "text", text: `Error calling ${toolName}: ${err.message}` }]
+          }
+        });
       }
+    }
+
+    if (apifyErr) {
       return writeMsg({
         jsonrpc: "2.0",
         id,
         result: {
           isError: true,
-          content: [{
-            type: "text",
-            text: `Missing credentials. Set APIFY_TOKEN (free tier: ${APIFY_URL}) or RAPIDAPI_KEY (free plan: ${RAPIDAPI_URL}) in your MCP client env.`
-          }]
+          content: [{ type: "text", text: `Error calling ${toolName}: ${apifyErr.message}` }]
         }
+      });
+    }
+
+    // Zero-key free trial mode (no APIFY_TOKEN or RAPIDAPI_KEY set)
+    try {
+      const trialOut = await callZeroKeyTrial(toolName, args);
+      return writeMsg({
+        jsonrpc: "2.0",
+        id,
+        result: { content: [{ type: "text", text: trialOut }] }
       });
     } catch (err) {
       return writeMsg({
@@ -322,7 +382,10 @@ async function handleRequest(msg) {
         id,
         result: {
           isError: true,
-          content: [{ type: "text", text: `Error calling ${toolName}: ${err.message}` }]
+          content: [{
+            type: "text",
+            text: `Free trial error (${err.message}). Set APIFY_TOKEN (${APIFY_URL}) or RAPIDAPI_KEY (${RAPIDAPI_URL}) for full access.`
+          }]
         }
       });
     }
